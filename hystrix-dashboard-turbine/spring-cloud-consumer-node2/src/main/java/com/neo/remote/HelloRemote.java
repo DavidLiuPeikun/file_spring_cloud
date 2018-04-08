@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 @FeignClient(name= "spring-cloud-producer2", fallback = HelloRemoteHystrix.class)
 public interface HelloRemote {
 
-    @RequestMapping(value = "/hello")
+    @RequestMapping(value = "/hello2")
     public String hello2(@RequestParam(value = "name") String name);
 
 }

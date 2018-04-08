@@ -11,14 +11,14 @@ import org.springframework.web.bind.annotation.RestController;
 public class HelloController {
     private final Logger logger = LoggerFactory.getLogger(FallbackProvider.class);
 
-    @RequestMapping("/hello")
+    @RequestMapping("/hello2")
     public String index(@RequestParam String name) {
         logger.info("request two name is "+name);
-        try{
+        /*try{
             Thread.sleep(1000000);
         }catch ( Exception e){
             logger.error(" hello two error",e);
-        }
-        return "hello "+name+"，this is two messge";
+        }*/
+        return "hello "+name+"，this is two messge  xxxx";
     }
 }
